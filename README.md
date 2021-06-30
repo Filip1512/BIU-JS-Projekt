@@ -1,4 +1,4 @@
-# BIU-JS-Projekt
+# BIU-JS-Projekt - Notice Board
 
 
 ## How to open project?
