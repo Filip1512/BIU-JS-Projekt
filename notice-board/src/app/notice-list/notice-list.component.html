@@ -5,6 +5,7 @@
     <th scope="col">Title</th>
     <th scope="col">Description</th>
     <th scope="col">Owner</th>
+    <th scope="col">Operations</th>
   </tr>
   </thead>
   <tbody>
@@ -13,6 +14,7 @@
     <td>{{item.title}}</td>
     <td>{{item.description}}</td>
     <td>{{item.owner}}</td>
+    <th><i (click)="deleteNotice(item.id)" class="fa fa-trash" style="font-size:20px;color:red;"></i></th>
   </tr>
   </tbody>
 </table>

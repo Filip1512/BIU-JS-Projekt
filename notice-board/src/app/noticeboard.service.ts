@@ -6,13 +6,19 @@ import {HttpClient} from '@angular/common/http';
 })
 export class NoticeboardService {
   url = 'http://localhost:3000/advertisements';
-  constructor(private http: HttpClient) { }
-  getList()
-  {
+
+  constructor(private http: HttpClient) {
+  }
+
+  getList() {
     return this.http.get(this.url);
   }
-  saveNotice(data)
-  {
+
+  saveNotice(data) {
     return this.http.post(this.url, data);
+  }
+
+  deleteNotice(id) {
+    return this.http.delete(`${this.url}/${id}`);
   }
 }

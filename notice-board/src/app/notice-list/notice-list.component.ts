@@ -9,11 +9,18 @@ import { NoticeboardService } from '../noticeboard.service';
 export class NoticeListComponent implements OnInit {
 
   constructor(private notice: NoticeboardService) { }
-  collection = {};
+  collection: any = [];
   ngOnInit(): void {
     this.notice.getList().subscribe((result) => {
       console.warn(result);
       this.collection = result;
+    });
+  }
+  deleteNotice(item)
+  {
+    this.collection = this.collection.filter(e => e.id !== item);
+    this.notice.deleteNotice(item).subscribe((result) => {
+      console.warn('result', result);
     });
   }
 

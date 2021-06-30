@@ -8,6 +8,7 @@ import { NoticeboardService } from '../noticeboard.service';
   styleUrls: ['./notice-add.component.css']
 })
 export class NoticeAddComponent implements OnInit {
+  alert = false;
   addNotice = new FormGroup({
     title: new FormControl(''),
     description: new FormControl(''),
@@ -21,8 +22,13 @@ export class NoticeAddComponent implements OnInit {
   {
     this.notice.saveNotice(this.addNotice.value).subscribe((result) =>
     {
-       console.warn('result is here', result);
+      this.alert = true;
+      this.addNotice.reset({});
     });
+  }
+  closeAlert()
+  {
+    this.alert = false;
   }
 
 }
