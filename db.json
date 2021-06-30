@@ -1,0 +1,22 @@
+{
+  "advertisements": [
+    {
+      "id": 1,
+      "title": "Sprzedam opla",
+      "description": "gdynia centrum",
+      "owner": "ja"
+    },
+    {
+      "id": 2,
+      "title": "Szukam pracy",
+      "description": "gdynia orłowo",
+      "owner": "ktos"
+    },
+    {
+      "title": "Kupie kotka",
+      "description": "Białego fajnego",
+      "owner": "",
+      "id": 3
+    }
+  ]
+}
