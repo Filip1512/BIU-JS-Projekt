@@ -3,6 +3,6 @@
 
 ## How to open project?
 
-- json-server --watch db.json
 - cd {project dir}
+- json-server --watch db.json
 - ng serve
