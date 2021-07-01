@@ -1,15 +1,15 @@
 {
   "advertisements": [
     {
-      "id": 1,
       "title": "Sprzedam opla",
       "description": "gdynia centrum",
-      "owner": "ja"
+      "owner": "ja",
+      "id": 1
     },
     {
       "title": "Kupie kotka",
       "description": "Białego fajnego",
-      "owner": "",
+      "owner": "ktos",
       "id": 3
     },
     {
@@ -29,6 +29,11 @@
       "description": "za 2k netto",
       "owner": "",
       "id": 6
+    },
+    {
+      "title": "dej diament",
+      "description": "bo tak",
+      "id": 7
     }
   ]
 }

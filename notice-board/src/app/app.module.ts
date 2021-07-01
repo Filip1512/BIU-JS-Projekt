@@ -6,10 +6,9 @@ import { AppComponent } from './app.component';
 import { NoticeAddComponent } from './notice-add/notice-add.component';
 import { NoticeUpdateComponent } from './notice-update/notice-update.component';
 import { NoticeListComponent } from './notice-list/notice-list.component';
-import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
 import { HttpClientModule} from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
+import { NoticeGetsingleComponent } from './notice-getsingle/notice-getsingle.component';
 
 @NgModule({
   declarations: [
@@ -17,8 +16,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     NoticeAddComponent,
     NoticeUpdateComponent,
     NoticeListComponent,
-    LoginComponent,
-    RegisterComponent
+    NoticeGetsingleComponent
   ],
   imports: [
     BrowserModule,

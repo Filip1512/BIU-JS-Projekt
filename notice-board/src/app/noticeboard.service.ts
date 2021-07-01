@@ -21,4 +21,12 @@ export class NoticeboardService {
   deleteNotice(id) {
     return this.http.delete(`${this.url}/${id}`);
   }
+  getCurrentNotice(id: any)
+  {
+    return this.http.get(`${this.url}/${id}`);
+  }
+  updateNotice(id, data)
+  {
+    return this.http.put(`${this.url}/${id}`, data);
+  }
 }
