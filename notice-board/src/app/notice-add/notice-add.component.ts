@@ -11,7 +11,8 @@ export class NoticeAddComponent implements OnInit {
   alert = false;
   addNotice = new FormGroup({
     title: new FormControl(''),
-    description: new FormControl('')
+    description: new FormControl(''),
+    owner: new FormControl('')
   });
   constructor(private notice: NoticeboardService) { }
 

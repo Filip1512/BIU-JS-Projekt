@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NoticeGetsingleComponent } from './notice-getsingle.component';
+import { NoticeGetSingleComponent } from './notice-get-single.component';
 
 describe('NoticeGetsingleComponent', () => {
-  let component: NoticeGetsingleComponent;
-  let fixture: ComponentFixture<NoticeGetsingleComponent>;
+  let component: NoticeGetSingleComponent;
+  let fixture: ComponentFixture<NoticeGetSingleComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ NoticeGetsingleComponent ]
+      declarations: [ NoticeGetSingleComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(NoticeGetsingleComponent);
+    fixture = TestBed.createComponent(NoticeGetSingleComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

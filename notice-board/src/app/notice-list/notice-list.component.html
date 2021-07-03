@@ -1,5 +1,6 @@
 <h1>Notices list</h1>
 
+<div class="notice-list-container">
 <table class="table">
   <thead>
   <tr>
@@ -12,8 +13,8 @@
   <tbody>
   <tr *ngFor="let item of collection">
     <th>{{item.id}}</th>
-    <td>{{item.title}}</td>
-    <td>{{item.description}}</td>
+    <td class="notice-title">{{item.title}}</td>
+    <td class="notice-description">{{item.description}}</td>
     <th>
       <a routerLink="/details/{{item.id}}">
         <i class="fa fa-eye" style="font-size:20px;color:blue;"></i>
@@ -28,3 +29,4 @@
   </tr>
   </tbody>
 </table>
+</div>

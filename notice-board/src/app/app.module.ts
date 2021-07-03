@@ -8,7 +8,7 @@ import { NoticeUpdateComponent } from './notice-update/notice-update.component';
 import { NoticeListComponent } from './notice-list/notice-list.component';
 import { HttpClientModule} from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
-import { NoticeGetsingleComponent } from './notice-getsingle/notice-getsingle.component';
+import { NoticeGetSingleComponent } from './notice-get-single/notice-get-single.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +16,7 @@ import { NoticeGetsingleComponent } from './notice-getsingle/notice-getsingle.co
     NoticeAddComponent,
     NoticeUpdateComponent,
     NoticeListComponent,
-    NoticeGetsingleComponent
+    NoticeGetSingleComponent
   ],
   imports: [
     BrowserModule,

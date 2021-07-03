@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {NoticeAddComponent} from './notice-add/notice-add.component';
-import {NoticeListComponent} from './notice-list/notice-list.component';
-import {NoticeUpdateComponent} from './notice-update/notice-update.component';
+import { NoticeAddComponent } from './notice-add/notice-add.component';
+import { NoticeListComponent } from './notice-list/notice-list.component';
+import { NoticeUpdateComponent } from './notice-update/notice-update.component';
+import { NoticeGetSingleComponent } from './notice-get-single/notice-get-single.component';
 
 const routes: Routes = [
   {
@@ -12,6 +13,10 @@ const routes: Routes = [
   {
     component: NoticeUpdateComponent,
     path: 'update/:id'
+  },
+  {
+    component: NoticeGetSingleComponent,
+    path: 'details/:id'
   },
   {
     component: NoticeListComponent,
